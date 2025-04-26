@@ -1,32 +1,142 @@
-@import url('normalize.css');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;700&display=swap');
-@import url('./maintenance.css');
+@import url("normalize.css");
 
-body {
-  color: #171818;
+@font-face {
+  font-family: "Uncut Sans";
+  src: url("../fonts/UncutSans-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
 }
 
-main {
-  max-width: 600px;
-  padding: 0 20px;
-  margin: 0 auto;
+:root {
+  --base-metric: 4px;
+  --spacing-xs: calc(1 * var(--base-metric));
+  --spacing-s: calc(2 * var(--base-metric));
+  --spacing-m: calc(3 * var(--base-metric));
+  --spacing-l: calc(4 * var(--base-metric));
+  --spacing-xl: calc(5 * var(--base-metric));
+
+  --color-secondary-dark: #180427;
+  --color-primary-light: #fff;
+  --color-primary-main: #cafd73;
+
+  --text-m-font-size: calc(var(--base-metric) * var(--base-metric));
+  --text-m-line-height: 1.4;
+  --text-m-font-weight: 400;
+  --text-m-font-style: normal;
+  --text-m-font-family: "Uncut Sans", sans-serif;
+
+  --text-l-font-size: 1.25rem;
+  --text-l-line-height: 1.4;
+  --text-l-font-weight: 400;
+  --text-l-font-style: normal;
+  --text-l-font-family: "Uncut Sans", sans-serif;
+
+  --text-xl-font-size: 1.5rem;
+  --text-xl-line-height: 1.4;
+  --text-xl-font-weight: 400;
+  --text-xl-font-style: normal;
+
+  --text-xxl-font-family: "Uncut Sans", sans-serif;
+  --text-xxl-font-size: 1.75rem;
+  --text-xxl-line-height: 1.4;
+  --text-xxl-font-weight: 400;
+  --text-xxl-font-style: normal;
+
+  --text-xxxl-font-family: "Uncut Sans", sans-serif;
+  --text-xxxl-font-size: 2rem;
+  --text-xxxl-line-height: 1.1;
+  --text-xxxl-font-weight: 600;
+  --text-xxxl-font-style: normal;
+
+  --text-xxxxl-font-family: "Uncut Sans", sans-serif;
+  --text-xxxxl-font-size: 3rem;
+  --text-xxxxl-line-height: 1.1;
+  --text-xxxxl-font-weight: 600;
+  --text-xxxxl-font-style: normal;
+}
+
+html,
+body {
+  font-family: var(--text-m-font-family);
+  font-weight: var(--text-m-font-weight);
+  font-style: var(--text-m-font-style);
+  font-size: var(--text-m-font-size);
+  line-height: var(--text-m-line-height);
+  background-color: var(--color-secondary-dark);
+  color: var(--color-primary-light);
+}
+
+a {
+  color: var(--color-primary-main);
+}
+
+b,
+strong {
+  color: var(--color-primary-main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+blockquote {
+  max-width: 100%;
+  margin: 0;
+  padding: 0 0 var(--spacing-m);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding-top: var(--spacing-s);
 }
 
 h1 {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: var(--text-xxxxl-font-family);
+  font-size: var(--text-xxxxl-font-size);
+  line-height: var(--text-xxxxl-line-height);
+  font-weight: var(--text-xxxxl-font-weight);
+  font-style: var(--text-xxxxl-font-style);
 }
 
-h2, h3 {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+h2 {
+  font-family: var(--text-xxxl-font-family);
+  font-size: var(--text-xxxl-font-size);
+  line-height: var(--text-xxxl-line-height);
+  font-weight: var(--text-xxxl-font-weight);
+  font-style: var(--text-xxxl-font-style);
 }
 
-address {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  padding-bottom: 20px;
+h3 {
+  font-family: var(--text-xxl-font-family);
+  font-size: var(--text-xxl-font-size);
+  line-height: var(--text-xxl-line-height);
+  font-weight: var(--text-xxl-font-weight);
+  font-style: var(--text-xxl-font-style);
+}
+
+h4 {
+  font-family: var(--text-xl-font-family);
+  font-size: var(--text-xl-font-size);
+  line-height: var(--text-xl-line-height);
+  font-weight: var(--text-xl-font-weight);
+  font-style: var(--text-xl-font-style);
+}
+
+h5 {
+  font-family: var(--text-l-font-family);
+  font-size: var(--text-l-font-size);
+  line-height: var(--text-l-line-height);
+  font-weight: var(--text-l-font-weight);
+  font-style: var(--text-l-font-style);
+}
+
+main {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
 }
