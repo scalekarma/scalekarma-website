@@ -31,6 +31,9 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <link rel="stylesheet" href="/styles/default.css">
+    {% if style %}
+        <link rel="stylesheet" href="/styles/{{ style }}">
+    {% endif %}
 </head>
 <body>
     <main>

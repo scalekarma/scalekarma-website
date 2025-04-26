@@ -1,4 +1,5 @@
 ---
+style: pages/index/index.css
 title: Scalekarma – Data-driven marketing with engineering at heart
 layout: default
 description: Our site is currently under maintenance. We'll launch soon!
@@ -14,7 +15,7 @@ Whether you're looking to drive more qualified traffic, optimize your site's tec
 
 [Book a call](#book-a-call)
 
-## Your path to **search visibility**
+## Your path to **search visibility** {.section}
 
 A modern search stack for your website: from technical foundation to laser-focused conventional and AI search visibility.
 
@@ -42,13 +43,13 @@ Rank for all answers to relevant user questions
 
 Using AI agents trained in SEO and Product Marketing, we’ll analyze search intent and uncover all the best-fit queries related to your offerings, delivering a content strategy tailored to your unique user journey, from awareness to decision.
 
-## Engineering-flavored marketing
+## Engineering-flavored marketing {.section}
 
 > Ilya and his team greatly improved ElectroNeek’s keyword rankings, blog content, and technical SEO, driving traffic and revenue.
 
 Tammo Stubbe, ex. VP Global Marketing, ElectroNeek
 
-## How we **work**
+## How we **work** {.section}
 
 ### Discovery and strategic alignment
 
@@ -66,7 +67,7 @@ We break the audit’s prioritized recommendations into tasks tailored to your t
 
 As key recommendations are implemented, we track progress and adapt to emerging challenges or opportunities. If needed, we engage additional resources or bring in specialized expertise. Tailored KPI reporting ensures precise measurement of results, enabling sustained growth and helping you effectively showcase impact to stakeholders.
 
-## Looking to **learn more?**
+## Looking to **learn more?** {.section}
 
 Check out our FAQ or hit the button below to connect.
 
@@ -91,7 +92,7 @@ Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero e
 
 </details>
 
-## Contacts
+## Contacts {.section}
 
 <address>
   Ilya Telegin<br/>
