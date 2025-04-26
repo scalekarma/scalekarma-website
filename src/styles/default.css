@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'Uncut Sans';
-  src: url('../fonts/UncutSans-Variable.woff2') format('woff2');
+  src: url('../fonts/UncutSans/UncutSans-Variable.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
 }

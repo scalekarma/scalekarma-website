@@ -5,6 +5,7 @@ import markdownItHeaderSections from 'markdown-it-header-sections';
 import postcssPlugin from '@jgarber/eleventy-plugin-postcss';
 
 export default async function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy('src/fonts');
   eleventyConfig.addPlugin(postcssPlugin);
 
   // Add site-wide data
