@@ -5,10 +5,11 @@ import postcss from 'postcss';
 import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
 import postcssImport from 'postcss-import';
+import markdownItAttrs from 'markdown-it-attrs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-export default async function(eleventyConfig) {
+export default async function (eleventyConfig) {
   // Watch CSS files for changes
   eleventyConfig.addWatchTarget('./src/styles/');
 
@@ -31,32 +32,36 @@ export default async function(eleventyConfig) {
     const plugins = [
       postcssImport,
       autoprefixer,
-      isProd && cssnano({ preset: 'default' })
+      isProd && cssnano({ preset: 'default' }),
     ].filter(Boolean);
 
-    const result = await postcss(plugins)
-      .process(css, {
-        from: 'src/styles/index.css',
-        to: 'dist/styles/index.css'
-      });
+    const result = await postcss(plugins).process(css, {
+      from: 'src/styles/index.css',
+      to: 'dist/styles/index.css',
+    });
 
     // Write the processed CSS
     await fs.writeFile('dist/styles/index.css', result.css);
   });
 
   // Add site-wide data
-  eleventyConfig.addGlobalData("site", {
-    url: "https://scalekarma.com" // Replace with your actual website URL
+  eleventyConfig.addGlobalData('site', {
+    url: 'https://scalekarma.com', // Replace with your actual website URL
   });
 
   // Copy static files directly to dist
-  eleventyConfig.addPassthroughCopy({ "src/static": "/" });
+  eleventyConfig.addPassthroughCopy({ 'src/static': '/' });
+
+  // Add classes, identifiers and attributes to your markdown
+  // with {.class #identifier attr=value attr2="spaced value"} curly brackets,
+  // similar to pandoc's header attributes.
+  eleventyConfig.amendLibrary('md', lib => lib.use(markdownItAttrs));
 
   return {
     dir: {
       input: 'src',
       layouts: '_layouts',
       output: 'dist',
-    }
+    },
   };
 }
