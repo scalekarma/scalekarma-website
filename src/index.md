@@ -8,7 +8,7 @@ social:
 
 # scalekarma
 
-## Data-driven **search marketing** with **engineering** at heart
+## Data-driven **search marketing** with **engineering** at heart {.section .hero}
 
 Whether you're looking to drive more qualified traffic, optimize your site's tech for search or increase ROI — we've got you covered.
 

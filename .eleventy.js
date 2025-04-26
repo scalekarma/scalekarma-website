@@ -6,6 +6,7 @@ import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
 import postcssImport from 'postcss-import';
 import markdownItAttrs from 'markdown-it-attrs';
+import markdownItHeaderSections from 'markdown-it-header-sections';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -26,7 +27,7 @@ export default async function (eleventyConfig) {
     }
 
     // Read the CSS file
-    const css = await fs.readFile('src/styles/index.css', 'utf8');
+    const css = await fs.readFile('src/styles/default.css', 'utf8');
 
     // Process it with PostCSS
     const plugins = [
@@ -36,12 +37,12 @@ export default async function (eleventyConfig) {
     ].filter(Boolean);
 
     const result = await postcss(plugins).process(css, {
-      from: 'src/styles/index.css',
-      to: 'dist/styles/index.css',
+      from: 'src/styles/default.css',
+      to: 'dist/styles/default.css',
     });
 
     // Write the processed CSS
-    await fs.writeFile('dist/styles/index.css', result.css);
+    await fs.writeFile('dist/styles/default.css', result.css);
   });
 
   // Add site-wide data
@@ -52,10 +53,33 @@ export default async function (eleventyConfig) {
   // Copy static files directly to dist
   eleventyConfig.addPassthroughCopy({ 'src/static': '/' });
 
-  // Add classes, identifiers and attributes to your markdown
-  // with {.class #identifier attr=value attr2="spaced value"} curly brackets,
-  // similar to pandoc's header attributes.
-  eleventyConfig.amendLibrary('md', lib => lib.use(markdownItAttrs));
+  // Add markdown-it plugins
+  eleventyConfig.amendLibrary('md', lib => {
+    lib.use(markdownItAttrs);
+    lib.use(markdownItHeaderSections);
+
+    lib.renderer.rules.heading_open = (tokens, idx, options, env, self) => {
+      const token = tokens[idx];
+      if (
+        token.tag === 'h2' &&
+        token.attrs &&
+        token.attrs.find(attr => attr.includes('class'))
+      ) {
+        const classAttrIndex = token.attrs.findIndex(attr =>
+          attr.includes('class'),
+        );
+        const updatedClassAttr = [
+          'class',
+          token.attrs[classAttrIndex][1]
+            .split(' ')
+            .map(cls => cls + '__heading')
+            .join(' '),
+        ];
+        token.attrs[classAttrIndex] = updatedClassAttr;
+      }
+      return self.renderToken(tokens, idx, options, env, self);
+    };
+  });
 
   return {
     dir: {
