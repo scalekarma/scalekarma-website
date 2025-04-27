@@ -1,0 +1,49 @@
+details {
+  background-color: var(--color-0-1);
+  color: var(--color-1-5);
+  padding: var(--spacing-m) var(--spacing-m) 0 var(--spacing-xl);
+  border-radius: var(--spacing-l);
+  box-sizing: border-box;
+  overflow: hidden; /* Keep this line to prevent an odd blue outline around the element in Safari. */
+}
+
+summary {
+  font-size: var(--text-l-font-size);
+  font-weight: var(--text-l-font-weight);
+  line-height: var(--text-l-line-height);
+  position: relative;
+}
+
+summary::marker {
+  content: '';
+}
+
+summary::before {
+  content: '+';
+  color: var(--color-1-1);
+  font-size: var(--text-xl-font-size);
+  position: absolute;
+  left: calc(var(--spacing-m) * -1);
+  top: -2px;
+}
+
+::details-content {
+  box-sizing: content-box;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  padding: var(--spacing-m) 0 0;
+}
+
+[open] {
+  padding-bottom: var(--spacing-m);
+}
+
+[open]::details-content {
+  max-height: 800px; /* Set a max-height value enough to show all the content */
+  transition: max-height 0.5s ease-in;
+}
+
+[open] summary::before {
+  content: '-';
+}

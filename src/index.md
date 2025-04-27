@@ -64,7 +64,7 @@ strategy tailored to your unique user journey, from awareness to decision.
 
 Tammo Stubbe, ex. VP Global Marketing, ElectroNeek
 
-## How we **work** {.section .numbered}
+## How we **work** {.section .section_layout_columns .numbered}
 
 <ripples position="left" />
 
@@ -99,7 +99,7 @@ specialized expertise. Tailored KPI reporting ensures precise measurement of res
 enabling sustained growth and helping you effectively showcase impact to
 stakeholders.
 
-## Looking to **learn&nbsp;more?** {.section .section_type_highlight}
+## Looking to **learn&nbsp;more?** {.section .section_layout_columns .section_type_highlight}
 
 Check out our FAQ or hit the button below to connect.
 

@@ -1,17 +1,17 @@
 .section {
   position: relative;
   z-index: 1;
-  padding: var(--spacing-l) var(--spacing-m) var(--spacing-xl);
+  padding: var(--spacing-l) var(--spacing-l) var(--spacing-xl);
   overflow: visible;
+  max-width: 700px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .section_type_highlight {
   --radius: var(--spacing-xl);
-  box-sizing: border-box;
   border-radius: var(--radius);
   background: color-mix(in srgb, var(--color-0-1) 15%, transparent);
-  padding-left: var(--spacing-l);
-  padding-right: var(--spacing-l);
   margin-top: var(--spacing-l);
   margin-bottom: var(--spacing-xl);
   display: grid;
@@ -21,6 +21,7 @@
 .section_type_highlight::before {
   content: '';
   position: absolute;
+  z-index: -1;
   inset: 0;
   border-radius: var(--radius);
   padding: 1px;
@@ -57,6 +58,7 @@
 .section_type_point::before {
   content: '';
   position: absolute;
+  z-index: -1;
   inset: 0;
   border-radius: var(--radius);
   padding: 1px;
@@ -94,4 +96,26 @@
   font-size: var(--text-l-font-size);
   font-weight: var(--text-l-font-weight);
   line-height: var(--text-l-line-height);
+}
+
+@media (min-width: 1000px) {
+  .section {
+    text-align: center;
+  }
+  .section_type_point {
+    text-align: left;
+  }
+
+  .section_layout_columns {
+    text-align: left;
+  }
+
+  .section_type_highlight {
+    column-gap: var(--spacing-m);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section_type_highlight > :not(.section) {
+    grid-column: 1 / 3;
+  }
 }
