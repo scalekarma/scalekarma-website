@@ -1,8 +1,10 @@
 .page {
   position: relative;
   z-index: 1;
+  overflow: clip;
 }
 
 .page__logo {
   height: 20px;
+  margin-left: var(--spacing-m);
 }
