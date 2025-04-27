@@ -10,8 +10,10 @@
   border-radius: var(--radius);
   background: color-mix(in srgb, var(--color-0-1) 15%, transparent);
   position: relative;
-  padding-left: var(--spacing-m);
-  padding-right: var(--spacing-m);
+  padding-left: var(--spacing-l);
+  padding-right: var(--spacing-l);
+  margin-top: var(--spacing-l);
+  margin-bottom: var(--spacing-xl);
   display: grid;
   row-gap: var(--spacing-m);
 }
