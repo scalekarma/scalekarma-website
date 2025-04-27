@@ -11,35 +11,35 @@ social:
 
 <ripples />
 
-## Data-driven **search marketing** with **engineering** at heart {.section .hero}
+## Data-driven **search&nbsp;marketing** with **engineering** at&nbsp;heart {.section .hero}
 
 Whether you’re looking to drive more qualified traffic, optimize your site’s tech for search or increase ROI — we’ve got you covered.
 
 [Book a call](#book-a-call)
 
-## Your path to **search visibility** {.section}
+## Your path to **search&nbsp;visibility** {.section .section_type_highlight}
 
 A modern search stack for your website: from technical foundation to laser-focused conventional and AI search visibility.
 
-### Site crawling and indexing
+### Site crawling and&nbsp;indexing {.section .section_type_point}
 
 Make your best content discovered by search engines
 
 Your content can’t rank if it’s not found by search engines. On average, over 90% of web pages fail to receive any organic traffic. We’ll work to fix search visibility issues throughout your website’s tech stack to help your pages get discovered.
 
-### AI search optimization
+### AI&nbsp;search optimization {.section .section_type_point}
 
 Ensure your brand appears in AI-generated answers
 
 Search engines like Google will lose 25% of their traffic by 2026 due to the rise of AI-powered search technology. This shift will inevitably impact your website’s search traffic. Prepare your site and content to thrive in the AI search landscape.
 
-### Structured data markup
+### Structured&nbsp;data markup {.section .section_type_point}
 
 Let search engines freely understand your content
 
 Structured data helps search engines understand your content more quickly and rank it appropriately. Without it, your site becomes a pile of puzzle pieces without a guiding picture, taking search engines three times longer to figure out.
 
-### Content strategy
+### Content strategy {.section .section_type_point}
 
 Rank for all answers to relevant user questions
 
@@ -69,7 +69,7 @@ We break the audit’s prioritized recommendations into tasks tailored to your t
 
 As key recommendations are implemented, we track progress and adapt to emerging challenges or opportunities. If needed, we engage additional resources or bring in specialized expertise. Tailored KPI reporting ensures precise measurement of results, enabling sustained growth and helping you effectively showcase impact to stakeholders.
 
-## Looking to **learn more?** {.section}
+## Looking to **learn&nbsp;more?** {.section .section_type_highlight}
 
 Check out our FAQ or hit the button below to connect.
 

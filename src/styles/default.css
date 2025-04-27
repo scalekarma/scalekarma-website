@@ -13,15 +13,32 @@
 
 :root {
   --base-metric: 4px;
-  --spacing-xs: calc(1 * var(--base-metric));
-  --spacing-s: calc(2 * var(--base-metric));
-  --spacing-m: calc(3 * var(--base-metric));
-  --spacing-l: calc(4 * var(--base-metric));
-  --spacing-xl: calc(5 * var(--base-metric));
+  --spacing-xxs: calc(1 * var(--base-metric));
+  --spacing-xs: calc(2 * var(--base-metric));
+  --spacing-s: calc(3 * var(--base-metric));
+  --spacing-m: calc(4 * var(--base-metric));
+  --spacing-l: calc(6 * var(--base-metric));
+  --spacing-xl: calc(10 * var(--base-metric));
+  --spacing-xxl: calc(20 * var(--base-metric));
 
-  --color-secondary-dark: #180427;
-  --color-primary-light: #fff;
-  --color-primary-main: #cafd73;
+  --color-0-0: #727272;
+  --color-0-1: #fff;
+  --color-1-0: #180427;
+  --color-1-1: #5c2382;
+  --color-1-2: #9900ff;
+  --color-2-0: #cafd73;
+  --color-2-1: #ccffc8;
+
+  --color-gradient-1: linear-gradient(
+    0deg,
+    var(--color-1-1) 0%,
+    var(--color-0-0) 100%
+  );
+  --color-gradient-2: linear-gradient(
+    0deg,
+    var(--color-2-1) 0%,
+    var(--color-1-2) 100%
+  );
 
   --text-m-font-size: calc(var(--base-metric) * var(--base-metric));
   --text-m-line-height: 1.4;
@@ -66,17 +83,17 @@ body {
   font-style: var(--text-m-font-style);
   font-size: var(--text-m-font-size);
   line-height: var(--text-m-line-height);
-  background-color: var(--color-secondary-dark);
-  color: var(--color-primary-light);
+  background-color: var(--color-1-0);
+  color: var(--color-0-1);
 }
 
 a {
-  color: var(--color-primary-main);
+  color: var(--color-2-0);
 }
 
 b,
 strong {
-  color: var(--color-primary-main);
+  color: var(--color-2-0);
 }
 
 h1,
@@ -88,7 +105,7 @@ p,
 blockquote {
   max-width: 100%;
   margin: 0;
-  padding: 0 0 var(--spacing-m);
+  padding: 0 0 var(--spacing-s);
 }
 
 h1,
@@ -96,7 +113,7 @@ h2,
 h3,
 h4,
 h5 {
-  padding-top: var(--spacing-s);
+  padding-top: var(--spacing-xs);
 }
 
 h1 {

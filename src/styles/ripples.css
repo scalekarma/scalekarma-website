@@ -1,6 +1,6 @@
 .ripples {
-  --color-background: #180427;
-  --color-primary: #8146aa;
+  --color-background: var(--color-1-0);
+  --color-primary: var(--color-1-1);
   --parent-size: 1000px;
   position: absolute;
   top: -50px;
