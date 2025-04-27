@@ -1,0 +1,22 @@
+.page {
+  position: relative;
+  z-index: 1;
+  overflow: clip;
+}
+
+.page--heading {
+  max-width: 700px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 var(--spacing-l);
+}
+
+.page--logo {
+  height: 20px;
+}
+
+@media (min-width: 1000px) {
+  .page--heading {
+    text-align: center;
+  }
+}

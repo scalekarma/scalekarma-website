@@ -1,0 +1,14 @@
+{
+  "semi": true,
+  "arrowParens": "avoid",
+  "singleQuote": true,
+  "trailingComma": "all",
+  "proseWrap": "always",
+  "overrides": [
+    {
+      "files": "*.md",
+      "options": { "quoteProps": "preserve", "singleQuote": false }
+    },
+    { "files": "*.css,*.js", "options": { "insertPragma": true } }
+  ]
+}
