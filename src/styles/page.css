@@ -2,3 +2,7 @@
   position: relative;
   z-index: 1;
 }
+
+.page__logo {
+  height: 20px;
+}
