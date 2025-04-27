@@ -45,7 +45,7 @@ Rank for all answers to relevant user questions
 
 Using AI agents trained in SEO and Product Marketing, we’ll analyze search intent and uncover all the best-fit queries related to your offerings, delivering a content strategy tailored to your unique user journey, from awareness to decision.
 
-## Engineering-flavored marketing {.section}
+## Engineering-flavored **marketing** {.section}
 
 > Ilya and his team greatly improved ElectroNeek’s keyword rankings, blog content, and technical SEO, driving traffic and revenue.
 
