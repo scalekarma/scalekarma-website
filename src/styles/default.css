@@ -1,3 +1,5 @@
+/** @format */
+
 @import url('normalize.css');
 @import 'page.css';
 @import 'logo.css';
@@ -72,19 +74,19 @@
   --text-l-font-style: normal;
   --text-l-font-family: 'UncutSans', sans-serif;
 
-  --text-xl-font-size: 1.5rem;
+  --text-xl-font-size: 1.4rem;
   --text-xl-line-height: 1.2;
   --text-xl-font-weight: 500;
   --text-xl-font-style: normal;
 
   --text-xxl-font-family: 'UncutSans', sans-serif;
-  --text-xxl-font-size: 1.75rem;
+  --text-xxl-font-size: 1.7rem;
   --text-xxl-line-height: 1.2;
   --text-xxl-font-weight: 500;
   --text-xxl-font-style: normal;
 
   --text-xxxl-font-family: 'UncutSans', sans-serif;
-  --text-xxxl-font-size: 2rem;
+  --text-xxxl-font-size: 2.25rem;
   --text-xxxl-line-height: 1.1;
   --text-xxxl-font-weight: 600;
   --text-xxxl-font-style: normal;

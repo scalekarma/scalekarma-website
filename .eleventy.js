@@ -14,10 +14,10 @@ const markdownShortcodes = {
       }
 
       return `<div class="${classNames.join(' ')}">
-        <div class="ripples__item ripples__item_n_1"></div>
-        <div class="ripples__item ripples__item_n_2"></div>
-        <div class="ripples__item ripples__item_n_3"></div>
-        <div class="ripples__item ripples__item_n_4"></div>
+        <div class="ripples--item ripples--item_n_1"></div>
+        <div class="ripples--item ripples--item_n_2"></div>
+        <div class="ripples--item ripples--item_n_3"></div>
+        <div class="ripples--item ripples--item_n_4"></div>
       </div>`;
     },
   },
@@ -64,14 +64,12 @@ export default async function (eleventyConfig) {
         token.attrs &&
         token.attrs.find(attr => attr.includes('class'))
       ) {
-        const classAttrIndex = token.attrs.findIndex(attr =>
-          attr.includes('class'),
-        );
+        const classAttrIndex = token.attrs.findIndex(attr => attr.includes('class'));
         const updatedClassAttr = [
           'class',
           token.attrs[classAttrIndex][1]
             .split(' ')
-            .map(cls => cls + '__heading')
+            .map(cls => cls + '--heading')
             .join(' '),
         ];
         token.attrs[classAttrIndex] = updatedClassAttr;

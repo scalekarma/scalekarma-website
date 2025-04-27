@@ -13,7 +13,7 @@
   background-color: var(--color-background);
 }
 
-.ripples__item {
+.ripples--item {
   --item-size: 10px;
   position: absolute;
   top: 50%;
@@ -34,19 +34,19 @@
   animation-play-state: paused;
 }
 
-.ripples__item_n_1 {
+.ripples--item_n_1 {
   animation-name: ripple-1;
 }
 
-.ripples__item_n_2 {
+.ripples--item_n_2 {
   animation-name: ripple-2;
 }
 
-.ripples__item_n_3 {
+.ripples--item_n_3 {
   animation-name: ripple-3;
 }
 
-.ripples__item_n_4 {
+.ripples--item_n_4 {
   animation-name: ripple-4;
   animation-delay: 0s;
 }
@@ -99,7 +99,7 @@
   top: 50%;
   transform: translate(0, -50%);
 }
-.ripples_position_left .ripples__item {
+.ripples_position_left .ripples--item {
   left: 0;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -112,7 +112,7 @@
   z-index: -2;
   transform: translate(-50%, 0);
 }
-.ripples_position_bottom .ripples__item {
+.ripples_position_bottom .ripples--item {
   left: 50%;
   top: auto;
   bottom: 0;
@@ -120,6 +120,6 @@
   transform: translate(-50%, 50%);
 }
 
-.ripples_play .ripples__item {
+.ripples_play .ripples--item {
   animation-play-state: running;
 }
