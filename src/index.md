@@ -2,7 +2,7 @@
 style: pages/index/index.css
 title: Scalekarma – Data-driven marketing with engineering at heart
 layout: default
-description: Our site is currently under maintenance. We'll launch soon!
+description: Our site is currently under maintenance. We’ll launch soon!
 social:
   image: https://res.cloudinary.com/dodsgeckv/image/upload/v1734284328/scalekarma-og-image_ywgbhw.png
 ---
@@ -18,7 +18,7 @@ social:
 
 ## Data-driven **search marketing** with **engineering** at heart {.section .hero}
 
-Whether you're looking to drive more qualified traffic, optimize your site's tech for search or increase ROI — we've got you covered.
+Whether you’re looking to drive more qualified traffic, optimize your site’s tech for search or increase ROI — we’ve got you covered.
 
 [Book a call](#book-a-call)
 
@@ -30,7 +30,7 @@ A modern search stack for your website: from technical foundation to laser-focus
 
 Make your best content discovered by search engines
 
-Your content can’t rank if it’s not found by search engines. On average, over 90% of web pages fail to receive any organic traffic. We’ll work to fix search visibility issues throughout your website's tech stack to help your pages get discovered.
+Your content can’t rank if it’s not found by search engines. On average, over 90% of web pages fail to receive any organic traffic. We’ll work to fix search visibility issues throughout your website’s tech stack to help your pages get discovered.
 
 ### AI search optimization
 
