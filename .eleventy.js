@@ -3,10 +3,17 @@ import markdownItHeaderSections from 'markdown-it-header-sections';
 import markdownItShortcodeTag from 'markdown-it-shortcode-tag';
 import postcssPlugin from '@jgarber/eleventy-plugin-postcss';
 import fs from 'fs';
+
 const markdownShortcodes = {
   ripples: {
-    render: () => {
-      return `<div class="ripples">
+    render: attrs => {
+      const { position } = attrs;
+      const classNames = ['ripples'];
+      if (position) {
+        classNames.push(`ripples_position_${position}`);
+      }
+
+      return `<div class="${classNames.join(' ')}">
         <div class="ripples__item ripples__item_n_1"></div>
         <div class="ripples__item ripples__item_n_2"></div>
         <div class="ripples__item ripples__item_n_3"></div>
@@ -33,6 +40,7 @@ const markdownShortcodes = {
 
 export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/fonts');
+  eleventyConfig.addPassthroughCopy('src/scripts');
   eleventyConfig.addPlugin(postcssPlugin);
   eleventyConfig.addWatchTarget('./src/images/');
 

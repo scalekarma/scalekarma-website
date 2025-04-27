@@ -11,6 +11,8 @@ social:
 
 <ripples />
 
+<ripples position="bottom" />
+
 ## Data-driven **search&nbsp;marketing** with **engineering** at&nbsp;heart {.section .hero}
 
 Whether you’re looking to drive more qualified traffic, optimize your site’s tech for search or increase ROI — we’ve got you covered.
@@ -52,6 +54,8 @@ Using AI agents trained in SEO and Product Marketing, we’ll analyze search int
 Tammo Stubbe, ex. VP Global Marketing, ElectroNeek
 
 ## How we **work** {.section}
+
+<ripples position="left" />
 
 ### Discovery and strategic alignment
 
