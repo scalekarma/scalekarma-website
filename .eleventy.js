@@ -24,7 +24,7 @@ export default async function (eleventyConfig) {
     lib.renderer.rules.heading_open = (tokens, idx, options, env, self) => {
       const token = tokens[idx];
       if (
-        token.tag === 'h2' &&
+        ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(token.tag) &&
         token.attrs &&
         token.attrs.find(attr => attr.includes('class'))
       ) {
