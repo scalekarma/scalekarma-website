@@ -49,7 +49,7 @@
   border-radius: var(--radius);
   background: color-mix(in srgb, var(--color-0-1) 10%, transparent);
   position: relative;
-  padding: var(--spacing-s);
+  padding: var(--spacing-s) var(--spacing-m);
 }
 
 .section_type_point::before {
@@ -77,4 +77,19 @@
     var(--color-2-0) 50%,
     transparent 100%
   );
+}
+
+.section_type_point__heading {
+  font-family: var(--text-mono-font-family);
+  font-size: var(--text-mono-font-size);
+  line-height: var(--text-mono-line-height);
+  font-weight: var(--text-mono-font-weight);
+  font-style: var(--text-mono-font-style);
+  text-transform: uppercase;
+  color: var(--color-2-0);
+}
+.section_type_point__heading + p {
+  font-size: var(--text-l-font-size);
+  font-weight: var(--text-l-font-weight);
+  line-height: var(--text-l-line-height);
 }

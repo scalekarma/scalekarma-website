@@ -60,20 +60,20 @@
   --text-m-font-family: 'UncutSans', sans-serif;
 
   --text-l-font-size: 1.25rem;
-  --text-l-line-height: 1.4;
-  --text-l-font-weight: 400;
+  --text-l-line-height: 1.2;
+  --text-l-font-weight: 500;
   --text-l-font-style: normal;
   --text-l-font-family: 'UncutSans', sans-serif;
 
   --text-xl-font-size: 1.5rem;
   --text-xl-line-height: 1.4;
-  --text-xl-font-weight: 400;
+  --text-xl-font-weight: 500;
   --text-xl-font-style: normal;
 
   --text-xxl-font-family: 'UncutSans', sans-serif;
   --text-xxl-font-size: 1.75rem;
   --text-xxl-line-height: 1.4;
-  --text-xxl-font-weight: 400;
+  --text-xxl-font-weight: 500;
   --text-xxl-font-style: normal;
 
   --text-xxxl-font-family: 'UncutSans', sans-serif;
