@@ -68,7 +68,7 @@ Tammo Stubbe, ex. VP Global Marketing, ElectroNeek
 
 <ripples position="left" />
 
-### Discovery and strategic alignment {class="numbered--item"}
+### Discovery and strategic alignment {.numbered--item}
 
 We start by understanding your business goals, analytics and tech stacks. In two
 30-minute calls, we align with your stakeholders on conventional and AI-driven search
