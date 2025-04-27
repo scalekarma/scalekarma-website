@@ -1,0 +1,93 @@
+.ripples {
+  --color-background: #180427;
+  --color-primary: #8146aa;
+  --parent-size: 1000px;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  width: var(--parent-size);
+  height: var(--parent-size);
+  border-radius: 50%;
+  background-color: var(--color-background);
+}
+
+.ripples__item {
+  --item-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--item-size);
+  height: var(--item-size);
+  border-radius: 50%;
+  background-color: var(--color-background);
+  box-shadow: 0 0 10px 10px var(--color-background),
+    inset 0 0 10px 10px var(--color-background),
+    inset 0 0 10px 20px var(--color-primary);
+  opacity: 1;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.ripples__item_n_1 {
+  animation-name: ripple-1;
+}
+
+.ripples__item_n_2 {
+  animation-name: ripple-2;
+}
+
+.ripples__item_n_3 {
+  animation-name: ripple-3;
+}
+
+.ripples__item_n_4 {
+  animation-name: ripple-4;
+  animation-delay: 0s;
+}
+
+@keyframes ripple-1 {
+  100% {
+    opacity: 0.6;
+    width: calc(var(--item-size) * 100);
+    height: calc(var(--item-size) * 100);
+    box-shadow: 0 0 40px 40px var(--color-background),
+      inset 0 0 40px 40px var(--color-background),
+      inset 0 0 175px 150px var(--color-primary);
+  }
+}
+
+@keyframes ripple-2 {
+  100% {
+    opacity: 0.7;
+    width: calc(var(--item-size) * 70);
+    height: calc(var(--item-size) * 70);
+    box-shadow: 0 0 30px 30px var(--color-background),
+      inset 0 0 30px 30px var(--color-background),
+      inset 0 0 125px 125px var(--color-primary);
+  }
+}
+
+@keyframes ripple-3 {
+  100% {
+    opacity: 0.9;
+    width: calc(var(--item-size) * 40);
+    height: calc(var(--item-size) * 40);
+    box-shadow: 0 0 30px 30px var(--color-background),
+      inset 0 0 20px 20px var(--color-background),
+      inset 0 0 75px 75px var(--color-primary);
+  }
+}
+
+@keyframes ripple-4 {
+  100% {
+    width: calc(var(--item-size) * 20);
+    height: calc(var(--item-size) * 20);
+    box-shadow: 0 0 30px 30px var(--color-background),
+      inset 0 0 20px 20px var(--color-background),
+      inset 0 0 50px 50px var(--color-primary);
+  }
+}

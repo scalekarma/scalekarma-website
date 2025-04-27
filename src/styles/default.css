@@ -1,4 +1,6 @@
 @import url('normalize.css');
+@import 'page.css';
+@import 'ripples.css';
 @import 'section.css';
 
 @font-face {
