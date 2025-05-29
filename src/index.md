@@ -13,7 +13,7 @@ social:
 
 <ripples position="bottom" />
 
-## Data-driven **search&nbsp;marketing** with **engineering** at&nbsp;heart {.section .hero}
+## Data-driven **search&nbsp;marketing** with&nbsp;**engineering** at&nbsp;heart {.section .section_type_hero}
 
 Whether you’re looking to drive more qualified traffic, optimize your site’s tech for
 search or increase ROI — we’ve got you covered.

@@ -59,15 +59,17 @@
     var(--color-2-2) 100%
   );
 
-  --text-mono-font-size: calc(var(--base-metric) * var(--base-metric));
+  --base-font-size: 16px;
+
+  --text-mono-font-size: var(--base-font-size);
   --text-mono-line-height: 1.4;
   --text-mono-font-weight: 400;
   --text-mono-font-style: normal;
   --text-mono-font-family: 'IBMPlexMono', monospace;
 
-  --text-m-font-size: calc(var(--base-metric) * var(--base-metric));
+  --text-m-font-size: var(--base-font-size);
   --text-m-line-height: 1.4;
-  --text-m-font-weight: 400;
+  --text-m-font-weight: 300;
   --text-m-font-style: normal;
   --text-m-font-family: 'UncutSans', sans-serif;
 
@@ -89,13 +91,13 @@
   --text-xxl-font-style: normal;
 
   --text-xxxl-font-family: 'UncutSans', sans-serif;
-  --text-xxxl-font-size: 2.25rem;
+  --text-xxxl-font-size: 2rem;
   --text-xxxl-line-height: 1.1;
   --text-xxxl-font-weight: 600;
   --text-xxxl-font-style: normal;
 
   --text-xxxxl-font-family: 'UncutSans', sans-serif;
-  --text-xxxxl-font-size: 3rem;
+  --text-xxxxl-font-size: 2.5rem;
   --text-xxxxl-line-height: 1.1;
   --text-xxxxl-font-weight: 600;
   --text-xxxxl-font-style: normal;
@@ -118,6 +120,7 @@ a {
 
 b,
 strong {
+  font-weight: inherit;
   color: var(--color-2-0);
 }
 
@@ -221,4 +224,13 @@ blockquote::before {
 main {
   box-sizing: border-box;
   width: 100%;
+}
+
+@media (min-width: 1100px) {
+  :root {
+    --base-font-size: 18px;
+    --text-l-font-size: 1.2rem;
+    --text-xxxl-font-size: 2.5rem;
+    --text-xxxxl-font-size: 3.5rem;
+  }
 }
