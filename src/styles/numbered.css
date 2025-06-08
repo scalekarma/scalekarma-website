@@ -10,7 +10,7 @@
   font-size: var(--text-xxxl-font-size);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   .numbered--item {
     padding-left: var(--spacing-xxl);
   }

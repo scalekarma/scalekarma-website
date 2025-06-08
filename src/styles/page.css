@@ -15,8 +15,12 @@
   height: 20px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   .page--heading {
     text-align: center;
+  }
+  .page--logo {
+    height: 32px;
+    padding-top: var(--spacing-xl);
   }
 }
