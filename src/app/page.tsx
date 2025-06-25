@@ -13,7 +13,7 @@ export default function Home() {
         <Typography variant="h2" component="h1" gutterBottom>
           Welcome to ScaleKarma
         </Typography>
-        <Typography variant="h5" color="text.secondary" paragraph>
+        <Typography variant="subtitle1" component="p" color="text.secondary">
           Accelerate your business growth with AI-powered solutions.
         </Typography>
         <Button
