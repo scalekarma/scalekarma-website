@@ -11,3 +11,11 @@
 	font-weight: 400;
 	font-display: swap;
 }
+
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	position: relative;
+}

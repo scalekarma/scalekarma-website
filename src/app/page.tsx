@@ -10,7 +10,12 @@ import Logo from './Logo';
 
 export default function Home() {
 	return (
-		<Stack spacing={2} sx={{ padding: { xs: 2, sm: 4 } }}>
+		<Stack
+			spacing={2}
+			sx={{
+				padding: { xs: 2, sm: 4 },
+			}}
+		>
 			<Stack direction={'row'} sx={{ justifyContent: { sm: 'center' } }}>
 				<Box
 					sx={{
@@ -40,12 +45,19 @@ export default function Home() {
 					py: { xs: 2, sm: 4, md: 8 },
 				}}
 			>
-				<Typography variant="h2" component="h1" gutterBottom>
-					Streamline your shift to <Typography variant="highlight">AI search</Typography>
+				<Typography
+					variant="h2"
+					component="h1"
+					gutterBottom
+					sx={{
+						maxWidth: '950px',
+					}}
+				>
+					Streamline your shift to&nbsp;<Typography variant="highlight">AI&nbsp;search</Typography>
 				</Typography>
-				<Typography variant="subtitle1" component="p" sx={{ maxWidth: '700px' }}>
+				<Typography variant="subtitle1" component="p" sx={{ maxWidth: '630px' }}>
 					We‘re an independent research team building open solutions to help Content and SEO teams navigate the shift from conventional
-					search to AI-generated answers.
+					search to AI-generated&nbsp;answers.
 				</Typography>
 				<Button component={Link} href="#" variant="contained" size="large" sx={{ mt: 3 }}>
 					Chat with us

@@ -2,6 +2,7 @@
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import Ripples from './Ripples';
 
 // Extend Material UI theme types
 declare module '@mui/material/styles' {
@@ -32,6 +33,7 @@ const darkTheme = createTheme({
 	},
 	typography: {
 		fontFamily: 'UncutSans, Helvetica, Arial, sans-serif',
+		fontSize: 15,
 		h2: { fontWeight: 600 },
 		button: {
 			textTransform: 'none',
@@ -49,6 +51,7 @@ export default function ThemeRegistry({ children }: { children: React.ReactNode 
 	return (
 		<ThemeProvider theme={darkTheme}>
 			<CssBaseline />
+			<Ripples />
 			{children}
 		</ThemeProvider>
 	);
