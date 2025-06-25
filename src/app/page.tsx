@@ -5,24 +5,50 @@ import Typography from '@mui/material/Typography';
 import Link from 'next/link';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
+import SmallLogo from './SmallLogo';
+import Logo from './Logo';
 
 export default function Home() {
 	return (
-		<Stack spacing={2} sx={{ minHeight: '100vh', padding: { xs: 2, sm: 4 } }}>
-			<Box>
-				<svg width="60px" height="60px" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<circle cx="30" cy="30" r="30" fill="#000" />
-				</svg>
-			</Box>
-			<Stack sx={{ flexGrow: 1, justifyContent: 'center', alignItems: { xs: 'start', sm: 'center' } }}>
+		<Stack spacing={2} sx={{ padding: { xs: 2, sm: 4 } }}>
+			<Stack direction={'row'} sx={{ justifyContent: { sm: 'center' } }}>
+				<Box
+					sx={{
+						display: { xs: 'none', md: 'block' },
+						width: { xs: '30px', md: '50px' },
+						height: { xs: '30px', md: '50px' },
+					}}
+				>
+					<SmallLogo />
+				</Box>
+				<Box
+					sx={{
+						height: { xs: '30px', md: '50px' },
+						flexGrow: { xs: 0, md: 1 },
+						marginLeft: { md: '-50px' },
+					}}
+				>
+					<Logo />
+				</Box>
+			</Stack>
+			<Stack
+				sx={{
+					flexGrow: 1,
+					justifyContent: 'center',
+					alignItems: { sm: 'center' },
+					textAlign: { sm: 'center' },
+					py: { xs: 2, sm: 4, md: 8 },
+				}}
+			>
 				<Typography variant="h2" component="h1" gutterBottom>
-					Welcome to ScaleKarma
+					Streamline your shift to AI search
 				</Typography>
-				<Typography variant="subtitle1" component="p" color="text.secondary">
-					Accelerate your business growth with AI-powered solutions.
+				<Typography variant="subtitle1" component="p" color="text.secondary" sx={{ maxWidth: '700px' }}>
+					We're an independent research team building open solutions to help Content and SEO teams navigate the shift from conventional
+					search to AI-generated answers.
 				</Typography>
-				<Button component={Link} href="/get-started" variant="contained" size="large" sx={{ mt: 3 }}>
-					Get Started
+				<Button component={Link} href="#" variant="contained" size="large" sx={{ mt: 3 }}>
+					Chat with us
 				</Button>
 			</Stack>
 		</Stack>
