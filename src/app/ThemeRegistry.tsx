@@ -14,7 +14,7 @@ const darkTheme = createTheme({
 		},
 	},
 	typography: {
-		fontFamily: 'Uncut Sans, sans-serif',
+		fontFamily: 'UncutSans, Helvetica, Arial, sans-serif',
 		button: {
 			textTransform: 'none',
 		},
