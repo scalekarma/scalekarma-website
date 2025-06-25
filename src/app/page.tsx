@@ -8,13 +8,13 @@ import Stack from '@mui/material/Stack';
 
 export default function Home() {
 	return (
-		<Stack sx={{ minHeight: '100vh' }}>
+		<Stack spacing={2} sx={{ minHeight: '100vh', padding: { xs: 2, sm: 4 } }}>
 			<Box>
 				<svg width="60px" height="60px" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<circle cx="30" cy="30" r="30" fill="#000" />
 				</svg>
 			</Box>
-			<Stack sx={{ flexGrow: 1, justifyContent: 'center', alignItems: 'start' }}>
+			<Stack sx={{ flexGrow: 1, justifyContent: 'center', alignItems: { xs: 'start', sm: 'center' } }}>
 				<Typography variant="h2" component="h1" gutterBottom>
 					Welcome to ScaleKarma
 				</Typography>
