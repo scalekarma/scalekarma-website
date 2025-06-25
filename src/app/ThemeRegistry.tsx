@@ -1,6 +1,5 @@
 'use client';
 
-import * as React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -15,15 +14,9 @@ const darkTheme = createTheme({
 		},
 	},
 	typography: {
-		fontFamily: 'Uncut Sans, Arial, Helvetica, sans-serif',
-	},
-	components: {
-		MuiButton: {
-			styleOverrides: {
-				root: {
-					textTransform: 'none',
-				},
-			},
+		fontFamily: 'Uncut Sans, sans-serif',
+		button: {
+			textTransform: 'none',
 		},
 	},
 });

@@ -1,34 +1,6 @@
-@import '@fontsource/uncut-sans/400.css';
-@import '@fontsource/uncut-sans/600.css';
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --font-sans: 'Uncut Sans', Arial, Helvetica, sans-serif;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: 'Uncut Sans', Arial, Helvetica, sans-serif;
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
-  font-weight: 400;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-sans);
-  font-weight: 600;
+@font-face {
+	font-family: 'UncutSans';
+	src: url('/fonts/UncutSans-Variable.woff2') format('woff2');
+	font-weight: 100 900;
+	font-display: swap;
 }

@@ -43,7 +43,7 @@ export default function Home() {
 				<Typography variant="h2" component="h1" gutterBottom>
 					Streamline your shift to AI search
 				</Typography>
-				<Typography variant="subtitle1" component="p" color="text.secondary" sx={{ maxWidth: '700px' }}>
+				<Typography variant="subtitle1" component="p" sx={{ maxWidth: '700px' }}>
 					We're an independent research team building open solutions to help Content and SEO teams navigate the shift from conventional
 					search to AI-generated answers.
 				</Typography>
