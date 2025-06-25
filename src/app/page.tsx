@@ -9,11 +9,26 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <Container maxWidth="md" sx={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <Box textAlign="center" width="100%">
-        <Typography variant="h2" component="h1" gutterBottom>
+      <Box
+        width="100%"
+        sx={{
+          textAlign: { xs: 'left', sm: 'center' },
+          wordBreak: 'break-word',
+          overflowWrap: 'break-word',
+        }}
+      >
+        <Typography
+          variant="h2"
+          component="h1"
+          gutterBottom
+        >
           Welcome to ScaleKarma
         </Typography>
-        <Typography variant="subtitle1" component="p" color="text.secondary">
+        <Typography
+          variant="subtitle1"
+          component="p"
+          color="text.secondary"
+        >
           Accelerate your business growth with AI-powered solutions.
         </Typography>
         <Button
