@@ -1,22 +1,20 @@
 'use client';
 
 import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 import Link from 'next/link';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
 
 export default function Home() {
   return (
-    <Container maxWidth="md" sx={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <Box
-        width="100%"
-        sx={{
-          textAlign: { xs: 'left', sm: 'center' },
-          wordBreak: 'break-word',
-          overflowWrap: 'break-word',
-        }}
-      >
+    <Stack sx={{ minHeight: '100vh' }}>
+        <Box>
+          <svg width="60px" height="60px" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="30" fill="#000" />
+          </svg>
+        </Box>
+        <Stack sx={{ flexGrow: 1, justifyContent: 'center', alignItems: 'start' }}>
         <Typography
           variant="h2"
           component="h1"
@@ -40,7 +38,7 @@ export default function Home() {
         >
           Get Started
         </Button>
-      </Box>
-    </Container>
+        </Stack>
+    </Stack>
   );
 }
