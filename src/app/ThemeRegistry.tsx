@@ -37,12 +37,33 @@ const darkTheme = createTheme({
 		h2: { fontWeight: 600 },
 		button: {
 			textTransform: 'none',
+			fontSize: '1.1rem',
+			lineHeight: 1,
 		},
 		highlight: {
 			color: '#cafd73',
 			fontFamily: 'TT Nooks, Helvetica, Arial, sans-serif',
 			fontWeight: 400,
 			fontSize: '110%',
+		},
+	},
+	shape: {
+		borderRadius: 16,
+	},
+	components: {
+		MuiButton: {
+			styleOverrides: {
+				root: {
+					variants: [
+						{
+							props: { variant: 'contained' },
+							style: {
+								padding: '20px 50px',
+							},
+						},
+					],
+				},
+			},
 		},
 	},
 });
