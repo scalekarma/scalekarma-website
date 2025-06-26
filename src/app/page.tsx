@@ -59,7 +59,7 @@ export default function Home() {
 					We‘re an independent research team building open solutions to help Content and SEO teams navigate the shift from conventional
 					search to AI-generated&nbsp;answers.
 				</Typography>
-				<Button component={Link} href="#" variant="contained" size="large" sx={{ mt: 3 }}>
+				<Button component={Link} href="mailto:ilya@scalekarma.com" variant="contained" size="large" sx={{ mt: 3 }}>
 					Chat with us
 				</Button>
 			</Stack>
