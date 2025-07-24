@@ -5,7 +5,6 @@ import Typography from '@mui/material/Typography';
 import Link from 'next/link';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import SmallLogo from './SmallLogo';
 import Logo from './Logo';
 
 export default function Home() {
