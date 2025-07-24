@@ -19,18 +19,7 @@ export default function Home() {
 			<Stack direction={'row'} sx={{ justifyContent: { sm: 'center' } }}>
 				<Box
 					sx={{
-						display: { xs: 'none', md: 'block' },
-						width: { xs: '30px', md: '50px' },
 						height: { xs: '30px', md: '50px' },
-					}}
-				>
-					<SmallLogo />
-				</Box>
-				<Box
-					sx={{
-						height: { xs: '30px', md: '50px' },
-						flexGrow: { xs: 0, md: 1 },
-						marginLeft: { md: '-50px' },
 					}}
 				>
 					<Logo />
