@@ -5,11 +5,11 @@ const SmallLogo = () => {
 		<Image
 			src="/logo.min.svg"
 			alt="Scalekarma"
-			width={250}
-			height={60}
+			width={125}
+			height={30}
 			unoptimized
 			loading="eager"
-			style={{ width: '100%', height: '100%' }}
+			style={{ width: 'auto', height: '100%' }}
 		/>
 	);
 };
